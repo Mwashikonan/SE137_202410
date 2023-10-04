@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Tanya Konan">
+    <meta name="description" content="Week 1 HW">
+    <title>Week 1 | BIO Page</title>
+
+    <style>
+
+        .hide{
+
+            display: none
+
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+
+        <div id="header">Tanya</div>
+
+        <div id="nav">
+
+            <a href="#">BIO</a>
+            <a href="#">Education</a>
+            <a href="#">Hobbies</a>
+
+        </div>
+
+        <div id="main">
+
+            <div id="bio">BIO</div>
+            <div id="education">Education</div>
+            <div id="hobbies">Hobbies</div>
+
+        </div>
+        <div id="footer">Footer</div>
+
+        <!--End of Main-->
+
+    </div>
+
+    <script>
+
+        var a = Array.from(document.querySelectorALL(`a`));
+
+        for (let i=0; i<a.length; i++)
+        {
+
+            a[i].addEventListener(`click`, hide)
+
+        }
+        //a[1].addEventListener(`click`, hide)
+        //a[2].addEventListener(`click`, hide)
+
+        function hide(e)
+        {
+
+            e.preventDefault();
+
+            var div = document.querySelectorAll(`#main div`)
+
+            for(let i=0; i<div.length; i++)
+            {
+                div[i].classList.add(`hide`);
+            }
+           
+            div[a.indexOf(e.target)].classList.remove(`hide`);
+
+        }
+   </script>
+  
+</body>
+</html>

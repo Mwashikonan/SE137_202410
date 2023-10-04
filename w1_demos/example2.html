@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /*This is a comment*/
+
+        p{
+
+            color: aqua;
+            font-size: 32px
+
+        }
+
+        .bg-red b{
+
+            background-color: red;
+
+        }
+
+        .orange{
+
+            color: orange;
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <p class="bg-red orange">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+    Minima, ducimus magni accusantium consectetur nobis quae, 
+    ipsum incidunt eos <b>BOLD</b>voluptatem sint expedita nisi eveniet 
+    laboriosam hic vitae repellendus dolorem vero doloribus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+    Minima, ducimus magni accusantium consectetur nobis quae, 
+    ipsum incidunt eos voluptatem sint expedita nisi eveniet 
+    laboriosam hic vitae repellendus dolorem vero doloribus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+    Minima, ducimus ma<b>BOLD</b>gni accusantium consectetur nobis quae, 
+    ipsum incidunt eos voluptatem sint expedita nisi eveniet 
+    laboriosam hic vitae repellendus dolorem vero doloribus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+    Minima, ducimus magni accusantium consectetur nobis quae, 
+    ipsum incidunt eos voluptatem sint expedita nisi eveniet 
+    laboriosam hic vitae repellendus dolorem vero doloribus?</p>
+
+    <script>
+
+        var p = document.querySelector(`p`);
+
+        console.log(p.classList);
+
+    </script>
+    
+</body>
+</html>
