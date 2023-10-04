@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Tanya Konan">
+    <meta name="description" content="Week 1 HW">
+    <title>Week 1 | BIO Page</title>
+
+    <style>
+
+        body{
+
+            background-color: rgb(255, 212, 158);
+
+        }
+
+        #wrapper{
+
+            border:  10px solid rgb(112, 55, 1) ;
+            background-color: black;
+            background-image: url(images/IMG_6279.jpeg);
+            background-size: 1262px;
+
+            color: rgb(207, 167, 110) ;
+            margin: 5%;
+            padding: 10%;
+            border-radius: 25px;
+
+        }
+
+       #wrapper-bg{
+
+            border: 5px solid rgba(0, 0, 0, 0.666);
+            background-color: rgba(0, 0, 0, 0.666);
+            margin: 5%;
+            padding: 10%;
+
+        }
+
+        .hide{
+
+            display: none
+
+        }
+
+        span{
+
+            font-size: 45px;
+
+        }
+
+        #header{
+
+            font-size: 24px;
+            text-align: center;
+            margin-right: 50%;
+            
+        }
+
+        h1 img{
+            
+            width: 100px;
+
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div id="wrapper-bg">
+
+            <div id="header">
+
+                <h1>
+        
+                    <img id="img-1" src="images/IMG_6279.jpeg" alt="Toni K">
+        
+                    <span>&#10024;</span>
+        
+                    Tanya "Toni" Konan | About my life
+        
+                    <span>&#10024;</span>
+        
+                    <img id="img-2" src="images/IMG_6282.jpeg" alt="2nd Toni K ">
+
+                </h1>
+
+            </div><!--#header-->
+
+            <div id="nav">
+
+                <a href="#">BIO</a>
+                <a href="#">Education</a>
+                <a href="#">Hobbies</a>
+
+            </div>
+
+            <div id="main">
+
+                <div id="bio">BIO</div>
+                <div id="education">Education</div>
+                <div id="hobbies">Hobbies</div>
+
+            </div>
+
+            <div id="footer">Footer</div>
+
+            <!--End of Main-->
+
+            <script>
+
+                var a = Array.from(document.querySelectorALL(`a`));
+        
+                for (let i=0; i<a.length; i++)
+                {
+        
+                    a[i].addEventListener(`click`, hide)
+        
+                }
+                //a[1].addEventListener(`click`, hide)
+                //a[2].addEventListener(`click`, hide)
+        
+                function hide(e)
+                {
+        
+                    e.preventDefault();
+        
+                    var div = document.querySelectorAll(`#main div`)
+        
+                    for(let i=0; i<div.length; i++)
+                    {
+                        div[i].classList.add(`hide`);
+                    }
+                
+                    div[a.indexOf(e.target)].classList.remove(`hide`);
+        
+                }
+        </script>
+
+        </div><!--#wrapper-->
+
+    </div>
+    
+  
+</body>
+</html>
