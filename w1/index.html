@@ -10,6 +10,12 @@
 
     <style>
 
+        @font-face {
+
+            font-family: sunshine;
+            src: url(fonts/BetterSunriseDemoRegular.ttf);
+        }
+
         body{
 
             background-color: rgb(255, 212, 158);
@@ -18,26 +24,66 @@
 
         #wrapper{
 
-            border:  10px solid rgb(112, 55, 1) ;
+            border:  5px solid rgb(112, 55, 1) ;
             background-color: black;
             background-image: url(images/IMG_6279.jpeg);
-            background-size: 1262px;
+            background-size: 1343px;
 
             color: rgb(207, 167, 110) ;
-            margin: 5%;
-            padding: 10%;
+            margin: 2%;
+            padding: 5%;
             border-radius: 25px;
+            box-shadow:0 0 10px rgb(81, 81, 81);
 
         }
 
        #wrapper-bg{
 
-            border: 5px solid rgba(0, 0, 0, 0.666);
-            background-color: rgba(0, 0, 0, 0.666);
-            margin: 5%;
-            padding: 10%;
+            border: 5px solid rgba(112, 55, 1, 0.854);
+            background-color: rgba(112, 55, 1, 0.854);
+            margin: 5px;
+            padding: 10px;
 
         }
+
+        #nav{
+
+            list-style-type: none;
+            padding: 7px;
+            overflow: hidden;
+            background-image: url(images/bg_brown_hearts.jpeg);
+            text-align: center;
+
+        }
+        
+        .link{
+
+            width:100px;
+            height:40px;
+            margin-left:90px;
+
+            margin-right:50px;
+            text-decoration: none;
+            font-size:17px;
+
+            text-align:center;
+            padding: 14px 15px;
+            line-height:50px;
+
+            box-shadow:0 0 8px black;
+            background-color:rgb(176, 140, 119);
+            color:rgb(63, 29, 11);
+            border-radius: 15px;
+
+        }
+
+        .link:hover{
+
+            background-color: rgb(63, 29, 11);
+            color: rgb(176, 140, 119);
+
+        }
+
 
         .hide{
 
@@ -45,7 +91,7 @@
 
         }
 
-        span{
+        h1 span{
 
             font-size: 45px;
 
@@ -55,16 +101,132 @@
 
             font-size: 24px;
             text-align: center;
-            margin-right: 50%;
             
         }
 
-        h1 img{
+        h1{
             
-            width: 100px;
+            padding-top: 25px;
+        }
+
+        h1 b{
+
+            font-family: sunshine;
 
         }
 
+        #bio strong{
+
+            color: rgb(187, 127, 243);
+        }
+
+        #bio b u{
+
+            color:rgb(255, 132, 0);
+
+        }
+
+        #bio b{
+
+            color:rgb(237, 89, 63);
+
+        }
+
+        #bio i{
+
+            color:cyan;
+
+        }
+
+        #bio b i{
+
+            color: hotpink;
+
+        }
+
+        #bio i u{
+
+            color: cadetblue;
+
+        }
+
+        #bio img{
+
+            height: 500px;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            
+
+        }
+
+        #smiles{
+
+            font-size: 22px;
+            color: yellow;
+
+        }
+
+        #heart{
+
+            font-size: 20px;
+            color: red;
+
+        }
+
+        #education a{
+
+            color: rgb(207, 167, 110) ;
+    
+        }
+
+        #education a:hover {
+
+            color: rgb(92, 25, 22);
+            
+        }
+        #hobbies img {
+
+            width: 300px;
+            
+        }
+
+        #footer{
+
+            padding: 10px 15px;
+            background-color: rgba(207, 167, 110, 0.666);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color:rgb(63, 29, 11);
+
+        }
+        
+        #footer .link{
+
+            width:100px;
+            height:40px;
+            margin-left:17px;
+
+            margin-right:17px;
+            text-decoration: none;
+            font-size:17px;
+
+            text-align:center;
+            padding: 14px 15px;
+            line-height:50px;
+
+            box-shadow:0 0 8px black;
+            background-color:rgb(176, 140, 119);
+            color:rgb(63, 29, 11);
+
+        }
+        
+        #footer .link:hover{
+
+            background-color: rgb(63, 29, 11);
+            color: rgb(176, 140, 119);
+
+        }
 
     </style>
 
@@ -72,81 +234,341 @@
 
 <body>
 
+    <!--WRAPPER-->
     <div id="wrapper">
 
+        <!--BACKGROUND WRAPPER-->
         <div id="wrapper-bg">
 
+            <!--HEADER-->
             <div id="header">
 
                 <h1>
         
-                    <img id="img-1" src="images/IMG_6279.jpeg" alt="Toni K">
-        
                     <span>&#10024;</span>
         
-                    Tanya "Toni" Konan | About my life
+                    <b>Tanya</b> "<b>Toni</b>" <b>Konan</b> | <b>About my life</b>
         
                     <span>&#10024;</span>
-        
-                    <img id="img-2" src="images/IMG_6282.jpeg" alt="2nd Toni K ">
 
                 </h1>
 
             </div><!--#header-->
 
+            <br>
+            <hr>
+
+            <!--NAVIGATION-->
             <div id="nav">
 
-                <a href="#">BIO</a>
-                <a href="#">Education</a>
-                <a href="#">Hobbies</a>
+                <a href="#bio" class="link">BIO</a>
 
-            </div>
+                <a href="#education" class="link">Education</a>
 
+                <a href="#hobbies" class="link">Hobbies</a>
+
+                <a href="#footer" class="link">Bottom</a>
+
+            </div><!--#nav-->
+
+            <hr>
+            <br>
+            <br>
+
+            <!--MAIN CONTENT-->
             <div id="main">
 
-                <div id="bio">BIO</div>
-                <div id="education">Education</div>
-                <div id="hobbies">Hobbies</div>
+                <div id="bio">
 
-            </div>
+                    <h2>
 
-            <div id="footer">Footer</div>
+                        &bull;<u>My Bio</u>&bull;
+    
+                    </h2>
+    
+                    <p>
+                        <img src="images/KFKV5574.JPG" alt="Young Toni">
+    
+                        <img src="images/888ab0a1-2619-485f-b972-502a9df823c5.JPG" alt="TZ fam">
+    
+                        <img src="images/IMG_1CBF46FC07BD-1.jpeg" alt="Ivory fam">
+
+                        <br>
+                        <br>
+
+                        Hello! My name is 
+                        <strong>Tanya Amenan Konan</strong>, but a lot of people call me 
+                        <em>Toni</em>.I respond to both <strong>Tanya</strong> and <em>Toni</em>, so whichever is fine.
+    
+                        <br>
+    
+                        I was born on <u><em>April 12th,2002</em></u>, in 
+                        <u>Providence, Rhode Island</u>.
+                        I grew up and lived in 
+                        <b><u>Tanzania</u></b>with my family for
+                        <i><b>a decade</b></i>. 
+                        
+                        <br>
+    
+                        My mom originated from
+                        <b><u>Tanzania</u></b>, 
+                        so I visit my family there time to time.
+                        However, my dad originated from 
+                        <b><u>Ivory Coast</u></b>
+                        <br>
+                        and I've only been there 3 time. While living in 
+                        <b><u>Tanzania</u></b>
+                        I learned how to speak
+                        <span style="color: rgb(0, 173, 0);">S</span>
+                        <span style="color: yellow;">W</span>
+                        <span style="color: black;">A</span>
+                        <span style="color: blue;">H</span>
+                        <span style="color: rgb(0, 173, 0);">I</span>
+                        <span style="color: yellow">L</span>
+                        <span style="color: black">I</span>,
+                        &nbsp;making me <b>bilingual</b>
+                        <span id="smiles">&#9787;</span>.
+    
+                        <br>
+                        <br>
+    
+                        I have a younger brother, named <b>Arthur</b>.
+                        He's about <i>14 years old</i> right now. I also have
+                        <b><i>5 cousins</i></b> that I consider sibilings, 
+                        <br>
+                        since I grow up with them <span id="heart">&hearts;</span>. In my 
+                        <b> 21 years</b> of living, I've moved
+                        around quite a bit, from city to city and country to country.
+                        
+                        <br>
+                        
+                        Due to my frequent moving, I had to switch schools for a bit. But, because of
+                        that, I received and experienced <i><u>life lesson</u></i>
+                        that
+                        <br>
+                        I still carry with me. So I'm <b>thankful</b> 
+                        for those experiences and I'm glad that I met so many people in my life. 
+    
+                        <br>
+                        <br>
+                        
+                    </p>
+    
+                    <p>In my life, I've moved around quite alot. So here are the schools I attended.</p> 
+    
+                </div>
+
+                <hr>
+
+                <div id="education">
+
+
+                    <h2>
+
+                        &bull;<u>My Education (so far)</u>&bull;
+
+                    </h2>
+
+                    <!--Added links to schools-->
+
+                    <h4>
+
+                        <u>Primary/Elementary School</u>
+
+                    </h4>
+
+                    <ul>
+
+                        <li>
+
+                            St 
+                            <a href="https://www.staugustinesri.com/" target="_blank">Augustine</a>
+                            school
+
+                            <br>
+
+                            &nbsp;<i><b>- 1st & 2nd Grade</b></i>
+
+                        </li>
+
+                        <br>
+
+                        <li>
+
+                            Canon Andrea Mwaka School 
+                            (
+                            <a href="https://dodomacams.org/" target="_blank">CAMS</a>
+                            )
+
+                            <br>
+
+                            &nbsp;<i><b>-Standard 3 ~ 7 (3rd ~ 7th Grade)</b></i>
+
+                        </li>
+
+                    </ul>
+
+                    <h4>
+
+                        <u>Secondary/High School</u>
+
+                    </h4>
+
+                    <ul>
+
+                        <li>
+
+                            Canon Andrea Mwaka School 
+                            (
+                            <a href="https://dodomacams.org/" target="_blank">CAMS</a>
+                            )
+
+                            <br>
+
+                            &nbsp;<i><b>- Form 1 (HS Freshman year)</b></i>
+
+                        </li>
+
+                        <br>
+
+                        <li>
+
+                            Academic International Secondary School 
+                            (
+                            <a href="https://www.daracademic.com/secondary-school/" target="_blank">AISS</a>
+                            )
+
+                            <br>
+
+                            &nbsp;<i><b>- Form 1 (repeated) ~ Form 3
+
+                            <br>
+
+                            &nbsp;&nbsp;(HS Freshman to Junior year)</b></i>
+
+                        </li>
+
+                        <br>
+
+                        <li>
+
+                            <a href="https://kleincain.kleinisd.net/" target="_blank">Klein</a>
+                            Cain High School
+
+                            <br>
+
+                            &nbsp;<i><b>- HS Senior year</b></i>
+
+                        </li>
+
+                    </ul>
+
+                    <h4>
+
+                        <u>College</u>
+
+                    </h4>
+
+                    <ul>
+
+                        <li>
+
+                            New England Institute of Technology 
+                            (
+                            <a href="https://www.neit.edu/" target="_blank">NEIT</a>
+                            )
+
+                            <br>
+
+                            &nbsp;<i><b>- Currently attending</b></i>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <hr>
+
+                <div id="hobbies">
+                    
+                    <h2>
+
+                        &bull;<u>My Hobbies</u>&bull;
+    
+                    </h2>
+    
+                    <p>These are some of the things that I got into.</p>
+    
+                    <ol>
+    
+                        <li style="color: rgb(239, 249, 131);"><b>Crocheting</b></li>
+    
+                        <br>
+    
+                        <li style="color: rgb(218,165,32);"><b>Braiding</b></li>
+    
+                        <br>
+    
+                        <li style="color: rgb(247, 104, 22);"><b>Watching Anime</b></li>
+    
+                        <br>
+    
+                        <li style="color: rgb(151, 203, 255);">Reading Manga/Manhwa/Manhua</li>
+
+                        <br>
+
+                        <img src="images/IMG_5138.JPG" alt="hobbies">
+    
+                    </ol>
+
+                </div>
+
+            </div><!--#main-->
+
+            <br>
+            <hr>
+            <br>
+
+            <!--FOOTER-->
+            <div id="footer">
+                
+                <a href="#header" class="link" title="Back to Top"> Back to Top </a>
+
+                <p>&copy; Tanya Konan | W1 Assignment </p>
+
+            </div><!--#footer-->
 
             <!--End of Main-->
 
             <script>
-
-                var a = Array.from(document.querySelectorALL(`a`));
+       
+                var a = Array.from(document.querySelectorAll(`a`));
         
-                for (let i=0; i<a.length; i++)
+                for(let i=0; i<a.length; i++)
                 {
-        
                     a[i].addEventListener(`click`, hide)
-        
                 }
-                //a[1].addEventListener(`click`, hide)
-                //a[2].addEventListener(`click`, hide)
-        
+               
                 function hide(e)
                 {
-        
                     e.preventDefault();
         
                     var div = document.querySelectorAll(`#main div`)
-        
+                   
                     for(let i=0; i<div.length; i++)
                     {
                         div[i].classList.add(`hide`);
                     }
-                
+                   
                     div[a.indexOf(e.target)].classList.remove(`hide`);
-        
                 }
-        </script>
 
-        </div><!--#wrapper-->
+            </script>
 
-    </div>
+        </div><!--#wrapper-bg-->
+
+    </div><!--#wrapper-->
     
   
 </body>
